@@ -14,6 +14,9 @@
 		CEBEFFC61C26AC520047D9FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBEFFC41C26AC520047D9FF /* LaunchScreen.storyboard */; };
 		CEBEFFD11C26AC520047D9FF /* RealmTodoSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEFFD01C26AC520047D9FF /* RealmTodoSampleTests.swift */; };
 		CEBEFFDC1C26AC520047D9FF /* RealmTodoSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEFFDB1C26AC520047D9FF /* RealmTodoSampleUITests.swift */; };
+		CEBEFFEA1C26AF320047D9FF /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEFFE91C26AF320047D9FF /* ToDo.swift */; };
+		CEBEFFEE1C26B3300047D9FF /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEFFED1C26B3300047D9FF /* ToDoTableViewCell.swift */; };
+		F41289BE8E4035C53AFAF16A /* Pods_RealmTodoSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791C2FE59CE1C0A29371C780 /* Pods_RealmTodoSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62D1555F55234363CB4775A9 /* Pods-RealmTodoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTodoSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTodoSample/Pods-RealmTodoSample.release.xcconfig"; sourceTree = "<group>"; };
+		791C2FE59CE1C0A29371C780 /* Pods_RealmTodoSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTodoSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4E8F252D5E13B8A0FD9597 /* Pods-RealmTodoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTodoSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTodoSample/Pods-RealmTodoSample.debug.xcconfig"; sourceTree = "<group>"; };
 		CEBEFFB81C26AC520047D9FF /* RealmTodoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTodoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBEFFBB1C26AC520047D9FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBEFFBD1C26AC520047D9FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		CEBEFFD71C26AC520047D9FF /* RealmTodoSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmTodoSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBEFFDB1C26AC520047D9FF /* RealmTodoSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTodoSampleUITests.swift; sourceTree = "<group>"; };
 		CEBEFFDD1C26AC520047D9FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEBEFFE91C26AF320047D9FF /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		CEBEFFED1C26B3300047D9FF /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41289BE8E4035C53AFAF16A /* Pods_RealmTodoSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F6711B69AF60808E317E10B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB4E8F252D5E13B8A0FD9597 /* Pods-RealmTodoSample.debug.xcconfig */,
+				62D1555F55234363CB4775A9 /* Pods-RealmTodoSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CEBEFFAF1C26AC520047D9FF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +99,8 @@
 				CEBEFFCF1C26AC520047D9FF /* RealmTodoSampleTests */,
 				CEBEFFDA1C26AC520047D9FF /* RealmTodoSampleUITests */,
 				CEBEFFB91C26AC520047D9FF /* Products */,
+				8F6711B69AF60808E317E10B /* Pods */,
+				F750B5662B7A721A2B0D75C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +118,13 @@
 			isa = PBXGroup;
 			children = (
 				CEBEFFBB1C26AC520047D9FF /* AppDelegate.swift */,
+				CEBEFFED1C26B3300047D9FF /* ToDoTableViewCell.swift */,
 				CEBEFFBD1C26AC520047D9FF /* ViewController.swift */,
 				CEBEFFBF1C26AC520047D9FF /* Main.storyboard */,
 				CEBEFFC21C26AC520047D9FF /* Assets.xcassets */,
 				CEBEFFC41C26AC520047D9FF /* LaunchScreen.storyboard */,
 				CEBEFFC71C26AC520047D9FF /* Info.plist */,
+				CEBEFFE91C26AF320047D9FF /* ToDo.swift */,
 			);
 			path = RealmTodoSample;
 			sourceTree = "<group>";
@@ -125,6 +147,14 @@
 			path = RealmTodoSampleUITests;
 			sourceTree = "<group>";
 		};
+		F750B5662B7A721A2B0D75C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				791C2FE59CE1C0A29371C780 /* Pods_RealmTodoSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEBEFFE01C26AC520047D9FF /* Build configuration list for PBXNativeTarget "RealmTodoSample" */;
 			buildPhases = (
+				64B18E8A57FBCC261E6466AB /* Check Pods Manifest.lock */,
 				CEBEFFB41C26AC520047D9FF /* Sources */,
 				CEBEFFB51C26AC520047D9FF /* Frameworks */,
 				CEBEFFB61C26AC520047D9FF /* Resources */,
+				C90D0CBB88EF786DFB629D69 /* Embed Pods Frameworks */,
+				1C0CAC25B9CFE331D3788F7A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +284,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C0CAC25B9CFE331D3788F7A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmTodoSample/Pods-RealmTodoSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64B18E8A57FBCC261E6466AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C90D0CBB88EF786DFB629D69 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmTodoSample/Pods-RealmTodoSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEBEFFB41C26AC520047D9FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBEFFEA1C26AF320047D9FF /* ToDo.swift in Sources */,
 				CEBEFFBE1C26AC520047D9FF /* ViewController.swift in Sources */,
 				CEBEFFBC1C26AC520047D9FF /* AppDelegate.swift in Sources */,
+				CEBEFFEE1C26B3300047D9FF /* ToDoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +478,7 @@
 		};
 		CEBEFFE11C26AC520047D9FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB4E8F252D5E13B8A0FD9597 /* Pods-RealmTodoSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RealmTodoSample/Info.plist;
@@ -406,6 +490,7 @@
 		};
 		CEBEFFE21C26AC520047D9FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D1555F55234363CB4775A9 /* Pods-RealmTodoSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RealmTodoSample/Info.plist;
@@ -482,6 +567,7 @@
 				CEBEFFE21C26AC520047D9FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEBEFFE31C26AC520047D9FF /* Build configuration list for PBXNativeTarget "RealmTodoSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +576,7 @@
 				CEBEFFE51C26AC520047D9FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEBEFFE61C26AC520047D9FF /* Build configuration list for PBXNativeTarget "RealmTodoSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +585,7 @@
 				CEBEFFE81C26AC520047D9FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
