@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEBE00401C27FD0B0047D9FF /* ToDoTableViewCell 18-24-19-484.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE003F1C27FD0B0047D9FF /* ToDoTableViewCell 18-24-19-484.swift */; };
 		CEBEFFBC1C26AC520047D9FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEFFBB1C26AC520047D9FF /* AppDelegate.swift */; };
 		CEBEFFBE1C26AC520047D9FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEFFBD1C26AC520047D9FF /* ViewController.swift */; };
 		CEBEFFC11C26AC520047D9FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBEFFBF1C26AC520047D9FF /* Main.storyboard */; };
@@ -15,7 +16,8 @@
 		CEBEFFD11C26AC520047D9FF /* RealmTodoSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEFFD01C26AC520047D9FF /* RealmTodoSampleTests.swift */; };
 		CEBEFFDC1C26AC520047D9FF /* RealmTodoSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEFFDB1C26AC520047D9FF /* RealmTodoSampleUITests.swift */; };
 		CEBEFFEA1C26AF320047D9FF /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEFFE91C26AF320047D9FF /* ToDo.swift */; };
-		CEBEFFEE1C26B3300047D9FF /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEFFED1C26B3300047D9FF /* ToDoTableViewCell.swift */; };
+		CEBEFFF21C26CA0A0047D9FF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBEFFF11C26CA0A0047D9FF /* Realm.framework */; };
+		CEBEFFF41C26CA0E0047D9FF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBEFFF31C26CA0E0047D9FF /* RealmSwift.framework */; };
 		F41289BE8E4035C53AFAF16A /* Pods_RealmTodoSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791C2FE59CE1C0A29371C780 /* Pods_RealmTodoSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,7 @@
 		62D1555F55234363CB4775A9 /* Pods-RealmTodoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTodoSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTodoSample/Pods-RealmTodoSample.release.xcconfig"; sourceTree = "<group>"; };
 		791C2FE59CE1C0A29371C780 /* Pods_RealmTodoSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTodoSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4E8F252D5E13B8A0FD9597 /* Pods-RealmTodoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTodoSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTodoSample/Pods-RealmTodoSample.debug.xcconfig"; sourceTree = "<group>"; };
+		CEBE003F1C27FD0B0047D9FF /* ToDoTableViewCell 18-24-19-484.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ToDoTableViewCell 18-24-19-484.swift"; path = "../../../../.Trash/ToDoTableViewCell 18-24-19-484.swift"; sourceTree = "<group>"; };
 		CEBEFFB81C26AC520047D9FF /* RealmTodoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTodoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBEFFBB1C26AC520047D9FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBEFFBD1C26AC520047D9FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +57,8 @@
 		CEBEFFDB1C26AC520047D9FF /* RealmTodoSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTodoSampleUITests.swift; sourceTree = "<group>"; };
 		CEBEFFDD1C26AC520047D9FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEBEFFE91C26AF320047D9FF /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
-		CEBEFFED1C26B3300047D9FF /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		CEBEFFF11C26CA0A0047D9FF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm.framework"; sourceTree = "<group>"; };
+		CEBEFFF31C26CA0E0047D9FF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBEFFF41C26CA0E0047D9FF /* RealmSwift.framework in Frameworks */,
+				CEBEFFF21C26CA0A0047D9FF /* Realm.framework in Frameworks */,
 				F41289BE8E4035C53AFAF16A /* Pods_RealmTodoSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,8 +123,8 @@
 		CEBEFFBA1C26AC520047D9FF /* RealmTodoSample */ = {
 			isa = PBXGroup;
 			children = (
+				CEBE003F1C27FD0B0047D9FF /* ToDoTableViewCell 18-24-19-484.swift */,
 				CEBEFFBB1C26AC520047D9FF /* AppDelegate.swift */,
-				CEBEFFED1C26B3300047D9FF /* ToDoTableViewCell.swift */,
 				CEBEFFBD1C26AC520047D9FF /* ViewController.swift */,
 				CEBEFFBF1C26AC520047D9FF /* Main.storyboard */,
 				CEBEFFC21C26AC520047D9FF /* Assets.xcassets */,
@@ -150,6 +156,8 @@
 		F750B5662B7A721A2B0D75C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEBEFFF31C26CA0E0047D9FF /* RealmSwift.framework */,
+				CEBEFFF11C26CA0A0047D9FF /* Realm.framework */,
 				791C2FE59CE1C0A29371C780 /* Pods_RealmTodoSample.framework */,
 			);
 			name = Frameworks;
@@ -339,8 +347,8 @@
 			files = (
 				CEBEFFEA1C26AF320047D9FF /* ToDo.swift in Sources */,
 				CEBEFFBE1C26AC520047D9FF /* ViewController.swift in Sources */,
+				CEBE00401C27FD0B0047D9FF /* ToDoTableViewCell 18-24-19-484.swift in Sources */,
 				CEBEFFBC1C26AC520047D9FF /* AppDelegate.swift in Sources */,
-				CEBEFFEE1C26B3300047D9FF /* ToDoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +489,10 @@
 			baseConfigurationReference = BB4E8F252D5E13B8A0FD9597 /* Pods-RealmTodoSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = RealmTodoSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yosukenakayama.RealmTodoSample;
@@ -493,6 +505,10 @@
 			baseConfigurationReference = 62D1555F55234363CB4775A9 /* Pods-RealmTodoSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = RealmTodoSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yosukenakayama.RealmTodoSample;

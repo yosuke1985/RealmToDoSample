@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="178" width="600" height="422"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="hkr-YM-y4L" customClass="ToDoTableViewCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="hkr-YM-y4L" customClass="ToDoTableViewCell" customModule="RealmTodoSample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hkr-YM-y4L" id="oYl-d1-Osi">
@@ -42,7 +42,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="nameLabel" destination="ZsB-V4-dW5" id="raZ-bd-DQU"/>
+                                            <outlet property="nameLabel" destination="ZsB-V4-dW5" id="8HF-l3-tXF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -51,10 +51,10 @@
                                 </connections>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="IX7-qI-dWi">
-                                <rect key="frame" x="116" y="61" width="369" height="60"/>
+                                <rect key="frame" x="166" y="61" width="269" height="60"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="0d4-pW-n7V">
-                                        <rect key="frame" x="0.0" y="0.0" width="369" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="0d4-pW-n7V">
+                                        <rect key="frame" x="0.0" y="0.0" width="269" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1Z-sw-zDJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
@@ -63,14 +63,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="                            " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aZw-ZL-35t">
-                                                <rect key="frame" x="241" y="0.0" width="128" height="30"/>
+                                                <rect key="frame" x="141" y="0.0" width="128" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="Exd-we-Dit">
-                                        <rect key="frame" x="72" y="30" width="297" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Exd-we-Dit">
+                                        <rect key="frame" x="72" y="30" width="197" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deadline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnb-hO-XF7">
                                                 <rect key="frame" x="0.0" y="0.0" width="67" height="30"/>
@@ -79,7 +79,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yb-J2-chs">
-                                                <rect key="frame" x="267" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="167" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="Add"/>
                                                 <connections>
                                                     <action selector="addToDo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RpB-dL-voN"/>
@@ -101,7 +101,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myTableView" destination="9ah-pa-hJr" id="lkE-Iw-HG0"/>
+                        <outlet property="myTableView" destination="9ah-pa-hJr" id="2a3-db-Dms"/>
                         <outlet property="todoNameText" destination="aZw-ZL-35t" id="Nav-VX-Ghp"/>
                     </connections>
                 </viewController>

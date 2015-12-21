@@ -1,18 +1,11 @@
-//
-//  ViewController.swift
-//  RealmTodoSample
-//
-//  Created by 中山 陽介 on 12/20/15.
-//  Copyright © 2015 Yosuke Nakayama. All rights reserved.
-//
-
 import UIKit
 import RealmSwift
 
-class ViewController: UIViewController{
-
-    @IBOutlet weak var todoNameText: UITextField!
-    @IBOutlet weak var myTableView: UITableView!
+class ViewController: UIViewController {
+    
+    @IBOutlet var todoNameText: UITextField!
+    
+    @IBOutlet var myTableView: UITableView!
     
     var toDoItems:Results<ToDo>?{
         do{
@@ -24,11 +17,21 @@ class ViewController: UIViewController{
         return nil
     }
     
-    @IBAction func addToDo(sender: AnyObject) {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the vie1w, typically from a nib.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func addToDo(sender: UIButton) {
         // 入力チェック
-//        if isValidateInputContents() == false{
-//            return
-//        }
+        if isValidateInputContents() == false{
+            return
+        }
         
         // ToDoデータを作成する処理
         let toDo = ToDo()
@@ -45,22 +48,20 @@ class ViewController: UIViewController{
             print("失敗")
         }
         myTableView.reloadData()
-        
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+    
+    private func isValidateInputContents() -> Bool{
+        // ToDo名のデータ入力
+        if let name = todoNameText.text{
+            if name.characters.count == 0{
+                return false
+            }
+        }else{
+            return false
+        }
+        return true
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-
 
 extension ViewController: UITableViewDataSource{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,4 +82,3 @@ extension ViewController: UITableViewDataSource{
         return cell
     }
 }
-
